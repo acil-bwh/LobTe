@@ -9,11 +9,12 @@ the COPDGene study. Follow the instruction in www.copdgene.org to get access to
 the images.
 
 ### Requirements
-Tensorflow 2.12.1
-Pytorch 3.13
-Numpy 1.23.2
-SimpleITK 2.3.0
-scikit-learn 1.1.2
+Make sure you have the following libraries installed:
+* **Tensorflow** 2.12.1
+* **Pytorch** 3.13
+* **Numpy** 1.23.2
+* **SimpleITK** 2.3.0
+* **scikit-learn** 1.1.2
 
 ## The Shared Local Foundational Model
 The core of both LobTe prediction pipelines relies on a shared local foundational model developed for general-purpose representation learning in smokers, both with and without COPD. Built on an autoencoder framework, this model is trained end-to-end in an unsupervised manner using a random subset of co-registered local CT patches (32×32 pixels, 0.64 mm²).
