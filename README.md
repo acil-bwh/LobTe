@@ -15,6 +15,7 @@ Make sure you have the following libraries installed:
 * **Numpy** 1.23.2
 * **SimpleITK** 2.3.0
 * **scikit-learn** 1.1.2
+* **einops** 0.8.1
 
 ## The Shared Local Foundational Model
 The core of both LobTe prediction pipelines relies on a shared local foundational model developed for general-purpose representation learning in smokers, both with and without COPD. Built on an autoencoder framework, this model is trained end-to-end in an unsupervised manner using a random subset of co-registered local CT patches (32×32 pixels, 0.64 mm²).
@@ -47,4 +48,4 @@ This model leverages a global self-attention mechanism to predict annualized, lo
 
 ## Inference
 1. For a specific chest CT scan, use the LobeTe_Lung/create_fingerprint_by_lobe.py script to generate the lobe fingerprints.
-2. Predict the 5-year change in adjusted lung density for each lobe using the LobeTe_Lung/lobTe_prediction.py script.
+2. Predict the 5-year change in adjusted lung density for each lobe using the LobeTe_Lobes/lobTe_prediction.py script.
